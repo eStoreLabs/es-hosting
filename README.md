@@ -9,14 +9,15 @@ I created this repo because of numerous issues with fonts. Some eRetailers don't
 To prevent such issues and streamline smooth RC delivery I decided it would be helpful to have such a repository.
 
 # How to use
-## STEP 1.
+## Hosted fonts
+### STEP 1.
 Find the name and weight of the font you need in the file structure.
-## STEP 2.
+### STEP 2.
 In CSS file, add this:
 ```
 @font-face {
     font-family: "[Font-Name]";
-    src: url("https://estorelabs.github.io/FONTS/[folder-name]/[font-filename.format]") format("[format]");
+    src: url("https://estorelabs.github.io/es-hosting/fonts/[folder-name]/[font-filename.format]") format("[format]");
     font-weight: [weight];
     font-display: swap;
 }
@@ -27,15 +28,15 @@ for example, for Gilroy Regular:
 ```
 @font-face {
     font-family: "Gilroy-Regular";
-    src: url("https://estorelabs.github.io/FONTS/Gilroy/Gilroy-Regular.otf") format("otf");
+    src: url("https://estorelabs.github.io/es-hosting/fonts/Gilroy/Gilroy-Regular.otf") format("otf");
     font-weight: 400;
     font-display: swap;
 }
 ```
-## STEP 3.
+### STEP 3.
 Done, it should work.
 
-# How to expand on it
+## How to expand on it - fonts
 1. One font family should go into one folder.
 2. One folder can contain multiple font files in many formats. .woff2 and .woff are preferred.
 3. Naming convention: `Family-Variation.format`. e.g. `FONTS/Gotham/Gotham-Black.ttf`.
